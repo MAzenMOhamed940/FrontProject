@@ -32,8 +32,6 @@ header {
 }
 
 nav {
-
-    align-items: center;
     display: flex;
     gap: 10px;
     padding: 0 20px;
@@ -63,15 +61,6 @@ nav ul li a:hover {
 nav ul li a {
     text-decoration: none;
     color: white;
-}
-
-button {
-    background-color: var(--main-color);
-    color: var(--secondary-color);
-    padding: 20px 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .s1 {
@@ -122,11 +111,10 @@ button:hover {
 
 }
 
-.s2 h2 {
-    text-shadow: 0px -40px 1px rgb(112, 106, 106);
+.s2 h2,.s3 h2,.s5 h2 {
+    text-shadow: 0px -40px 3px rgb(112, 106, 106);
     padding-top: 15%;
     color: var(--text-color);
-    text-transform: uppercase;
     font-size: 250%;
     font-weight: 600;
     text-align: center;
@@ -137,75 +125,65 @@ button:hover {
     font-size: 120%;
 }
 
-.t3bt {
+.imgs2 {
     position: relative;
-    display: inline-block;
-    
+
 }
 
-.t3bt span.number {
+.imgs2 span.number {
     position: absolute;
     top: -130px;
     left: 2px;
     color: black;
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: var(--text-color);
     padding: 5px 10px;
-    border-radius: 50%;
     font-weight: bold;
     font-size: 150px;
 }
-.s3{
+
+.s3 {
     background-color: var(--bg-color);
 }
-.s3 h2{
-     text-shadow: 0px -40px 1px rgb(112, 106, 106);
-    padding-top: 15%;
-    color: var(--text-color);
-    text-transform: uppercase;
-    font-size: 250%;
-    font-weight: 600;
-    text-align: center;
-}
-.s3 img{
+.s3 img {
     position: relative;
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 
-.overlay{
-   position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--main-color);
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  opacity: 0;
-  color: black;
-  font-size: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s ease;  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
 }
 
 .overlay:hover {
     opacity: 1;
 }
-.number2{
+
+.number2 {
     position: absolute;
     top: -130px;
     left: 90px;
     color: black;
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: var(--text-color);
     padding: 5px 10px;
-    border-radius: 50%;
     font-weight: bold;
     font-size: 150px;
 }
@@ -213,15 +191,17 @@ button:hover {
 .s4 {
     background-color: var(--bg-color);
     height: 60vh;
-    
+
 }
-.s4 h2{
+
+.s4 h2 {
 
     color: var(--secondary-color);
     font-size: 250%;
     font-weight: 600;
 }
-.counter-container{
+
+.counter-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,14 +209,17 @@ button:hover {
     background-color: var(--main-color);
     transition: all 0.8s ease-out;
 }
+
 .hidden {
-  opacity: 0;
-  transform: translateY(100px);
+    opacity: 0;
+    transform: translateY(100px);
 }
+
 .show {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
+
 .big-counter {
     display: flex;
     justify-content: center;
@@ -245,12 +228,16 @@ button:hover {
     font-size: 50px;
     margin-left: 3%;
 }
-#counter1, #counter2, #counter3, #counter4 {
-   width: 100px;
-   height: fit-content;
+
+#counter1,
+#counter2,
+#counter3,
+#counter4 {
+    width: 100px;
+    height: fit-content;
 }
 
-.count-text ul{
+.count-text ul {
     color: var(--secondary-color);
     font-size: 30px;
     display: flex;
@@ -260,20 +247,12 @@ button:hover {
     text-align: center;
     font-weight: 750;
 }
-.s5{
+
+.s5 {
     background-color: var(--bg-color);
 }
-.s5 h2{
-text-shadow: 0px -40px 1px rgb(112, 106, 106);
-    padding-top: 15%;
-    color: var(--text-color);
-    text-transform: uppercase;
-    font-size: 250%;
-    font-weight: 600;
-    text-align: center;
-}
 
-.s5 .container{
+.s5 .container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,17 +262,18 @@ text-shadow: 0px -40px 1px rgb(112, 106, 106);
 
 }
 
-.card{
-   text-align: center;
+.card {
+    text-align: center;
     box-shadow: 0 4px 8px white;
     margin-bottom: 20%;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-out;
 }
-.number3{
+
+.number3 {
     position: absolute;
     top: -140px;
     left: 80%;
@@ -307,7 +287,7 @@ text-shadow: 0px -40px 1px rgb(112, 106, 106);
     font-size: 150px;
 }
 
-footer{
+footer {
     padding-top: 3%;
     background-color: var(--main-color);
     display: flex;
@@ -315,20 +295,29 @@ footer{
     height: 30vh;
 }
 
-footer ul{
+pre {
+    margin-left: 20px;
+    padding: 20px;
+    font-size: large;
+}
+
+footer ul {
     display: flex;
     flex-direction: column;
     gap: 10%;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: var(--secondary-color);
 }
+
 footer a:hover {
     color: grey;
     transition: color 0.3s;
 }
-footer button{
+
+footer button {
     background-color: black;
     color: white;
     margin-right: 40px;
@@ -339,78 +328,89 @@ footer button{
     animation-iteration-count: infinite;
     animation-fill-mode: both;
 }
+
 @keyframes move {
 
-    0%{
-          transform: scale(1);
+    0% {
+        transform: scale(1);
     }
-    50%{
-          transform: scale(1.4);
+
+    50% {
+        transform: scale(1.4);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
 
 @media (max-width:768px) {
     .s1 {
-    background-image: url("./images/main.jpg");
-    background-position: center;
-    background-size: 70% 90%;
-    background-repeat: no-repeat;
-}
-.img1{
-    width: 30%;
-    margin-bottom: 5%;
-}
-    .s2 img{
+        background-image: url("./images/main.jpg");
+        background-position: center;
+        background-size: 70% 90%;
+        background-repeat: no-repeat;
+    }
+
+    .img1 {
+        width: 30%;
+        margin-bottom: 5%;
+    }
+
+    .s2 img {
         display: none;
     }
 
-     header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-    text-align: center;
-  }
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
 
-  nav ul {
-    flex-direction: column;
-    gap: 5px;
-  }
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
 
-    .number,.number2,.number3{
+    .number,
+    .number2,
+    .number3 {
         display: none;
     }
-    .s4{
+
+    .s4 {
         display: none;
     }
-    .s5 .container{
+
+    .s5 .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-right: 50px;
     }
-    h1{
+
+    h1 {
         font-size: 300%;
     }
-     footer {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 20px 10px;
-    gap: 20px;
-  }
 
-  footer ul {
-    flex-direction: column;
-    align-items: center;
-  }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px 10px;
+        gap: 20px;
+    }
 
-  footer button {
-    margin: 0;
-  }
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    footer button {
+        margin: 0;
+    }
 
 }
-
