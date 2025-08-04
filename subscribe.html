@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./5d1e061efdd1ef025069021a_Journey_London_Logo_Slanted-WhiteYellow.svg">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
@@ -12,7 +14,7 @@
 
   <link rel="stylesheet" href="style2.css">
   <title>Journey London</title>
-  <link rel="icon" href="./5d1e061efdd1ef025069021a_Journey_London_Logo_Slanted-WhiteYellow.svg">
+  
 
 </head>
 <header>
@@ -30,18 +32,18 @@
   <div class="container">
     <div class="form-container">
       <h2>Gym Registration</h2>
-      <form>
+      <form id="gymForm">
         <label for="name">Full Name</label>
-        <input type="text" id="name" placeholder="Enter your name" required>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
         <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
         <label for="phone">Phone</label>
-        <input type="tel" id="phone" placeholder="Enter your phone" required>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone" required>
 
         <label for="goal">Fitness Goal</label>
-        <select id="goal" required>
+        <select id="goal" name="goal" required>
           <option value="">Choose goal</option>
           <option value="lose-weight">Lose Weight</option>
           <option value="gain-muscle">Gain Muscle</option>
@@ -49,6 +51,7 @@
         </select>
         <button type="submit">SUBMIT</button>
       </form>
+     
     </div>
   </div>
 </body>
